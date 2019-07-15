@@ -1,0 +1,16 @@
+// Настройка шрифта
+@mixin text($fontColor, $fontFamily, $fontSize, $fontWeight, $textAlign) {
+    color: $fontColor;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    text-align: $textAlign;
+}
+
+// Запрет на выделение контента
+@mixin userSelectNone {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
