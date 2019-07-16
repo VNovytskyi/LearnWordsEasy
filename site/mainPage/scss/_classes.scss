@@ -6,6 +6,7 @@
     margin-right: auto;
     width: fit-content;
     display: block; 
+    margin-bottom: 50px;
 }
 
 .btn {
@@ -43,3 +44,51 @@
     border-color: black;
     background-color: black;
 }
+
+
+.triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 50px;
+
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 50px;
+    
+    border-bottom-width: $triangleHeight;
+    border-bottom-style: solid;
+
+    animation-duration: 1000ms;
+}
+
+.Yellow{ 
+    height: $triangleHeight;
+    background-color: yellow;
+    
+    div{
+        border-bottom-color: black;
+    } 
+}
+
+.Black{ 
+    height: $triangleHeight;
+    background-color: black;
+    
+    div{
+        border-bottom-color: yellow;
+    }
+    
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+

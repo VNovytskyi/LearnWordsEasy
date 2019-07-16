@@ -1,13 +1,18 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Chewy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/triangles.js"></script>
     <title>LearnWordsEasy</title>
 </head>
-<body>
+<body onresize="drowTriangles()" onload="drowTriangles()">
     <div id="slide1">
         <header>
             <table>
@@ -27,11 +32,60 @@
         <h2>Изучайте слова быстро и легко с нами!</h2>
         <button class="btn centre orangeBtn">Начать</button>
     </div>
-
+    <div class="trianglesDiv Yellow"></div>
     <div id="slide2">
-
+        <h2>Возможности</h2>
+        <table class="centre">
+            <tr>
+                <td><i class="fa fa-home"></i>Собственный словарь</td>
+                <td><i class="fa fa-th"></i>Слова по категориям</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-plus"></i>Легко добавляйте новые слова</td>
+                <td><i class="fa fa-search"></i>Удобный поиск слов</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-star-o"></i>Избранные темы всегда под рукой</td>
+                <td><i class="fa fa-line-chart"></i>Быстрое изучение новых слов </td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-volume-up"></i>Произношение слов</td>
+                <td><i class="fa fa-bookmark"></i>Продолжайте там, где закончили</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-picture-o"></i>Ассоциация со словами</td>
+                <td><i class="fa fa-pencil"></i>Прописывайте слова</td>
+            </tr>
+        </table>    
     </div>
-    
-
+    <div class="trianglesDiv Black"></div>
+    <div id="slide3">
+            <h2>Особенности</h2>
+            <table class="centre">
+                <tr>
+                    <td><i class="fa fa-check"></i>Готовые наборы стандартных категорий и слов сразу после регистрации</td>
+                    <td><i class="fa fa-check"></i>Используйте свой аккаунт</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-check"></i>Добавление своих категорий и слов в словарь</td>
+                    <td><i class="fa fa-check"></i>Отмечайте изученные категории и слова</td>
+                </tr>
+                
+            </table>
+    </div>
+    <div class="trianglesDiv Yellow"></div>
+    <div id="slide4">
+        <h2>Внешний вид</h2>
+        <div id="test">
+                <i class="fa fa-picture-o fa-5x left"></i>
+                <i class="fa fa-picture-o fa-5x left"></i>
+                <i class="fa fa-picture-o fa-5x left"></i>
+                <i class="fa fa-picture-o fa-5x left"></i>
+                <i class="fa fa-picture-o fa-5x left"></i>
+                <i class="fa fa-picture-o fa-5x left"></i>
+        </div>
+        
+        
+    </div>
 </body>
 </html>

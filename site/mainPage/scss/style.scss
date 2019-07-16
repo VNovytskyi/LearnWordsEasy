@@ -1,15 +1,25 @@
 @import "variables";
 @import "mixins";
 @import "classes";
+@import "media";
 
 body {
     margin: 0; 
     @include userSelectNone;
 } 
 
-table { 
-    width: 100%;
+table { width: 100% }
+
+h2 {
+    margin-top: 0px;
+    padding-top: 50px;
 }
+
+#slide1, #slide2, #slide3, #slide4{
+    height: $slideHeight;
+    width: 100%;
+    min-height: fit-content;
+} 
 
 header {
     @include text(yellow, "Chewy", 1.9em, normal, center);
@@ -18,23 +28,80 @@ header {
 } 
 
 #slide1{
-    height: 100vh;
     background-color: yellow;
-    
+
     h1 {
         margin-top: 30vh;
         margin-bottom: 0;
         @include text(black, Chewy, 56px, normal, center);
     }
 
-    h2 {
-        @include text(black, Roboto, 24px, normal, center);
-    }
+    h2 { @include text(black, Roboto, 24px, normal, center) }
 }
 
 #slide2{
-    height: 100vh;
     background-color: black;
+
+    h2 { @include text(yellow, Roboto, 32px, normal, center) }
+
+    table{
+        @include text(yellow, Roboto, 24px, normal, left);
+        margin-top: 60px;
+        
+
+        td{
+            padding: 25px;
+            padding-left: 80px; 
+            width: 450px;
+            vertical-align: top;
+        }
+
+        i{
+            padding-right: 10px;
+        }
+    }  
 }
+
+#slide3{
+    background-color: yellow;
+   
+    h2 { @include text(black, Roboto, 32px, normal, center) }
+
+    table{
+        @include text(black, Roboto, 24px, normal, left);
+        margin-top: 60px;
+
+        td{
+            padding: 25px;
+            padding-left: 80px; 
+            width: 450px;
+            vertical-align: top;
+        }
+
+        i{
+            padding-right: 10px;
+        }
+    }  
+}
+
+#slide4{
+    background-color: black;
+    @include text(yellow, Roboto, 24px, normal, left);
+    
+    i{
+        align-content: space-between;
+    }
+   
+    h2 { @include text(yellow, Roboto, 32px, normal, center) }
+}
+
+
+@media (max-width: 600)
+{
+    #test{
+       
+    }
+}
+
 
 
