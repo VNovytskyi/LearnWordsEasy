@@ -81,6 +81,12 @@
 .right {
   float: right; }
 
+.td {
+  padding: 25px;
+  padding-left: 100px;
+  width: 450px;
+  vertical-align: top; }
+
 body {
   margin: 0;
   -webkit-user-select: none;
@@ -91,16 +97,27 @@ body {
 table {
   width: 100%; }
 
+header ~ table {
+  width: 100%;
+  margin-top: 60px; }
+
 h2 {
   margin-top: 0px;
   padding-top: 50px; }
+
+i {
+  padding-right: 10px; }
 
 #slide1, #slide2, #slide3, #slide4 {
   height: 110vh;
   width: 100%;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
-  min-height: fit-content; }
+  min-height: fit-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  display: block; }
 
 header {
   color: yellow;
@@ -121,7 +138,7 @@ header {
     font-size: 56px;
     font-weight: normal;
     text-align: center; }
-  #slide1 h2 {
+  #slide1 h3 {
     color: black;
     font-family: Roboto;
     font-size: 24px;
@@ -141,15 +158,7 @@ header {
     font-family: Roboto;
     font-size: 24px;
     font-weight: normal;
-    text-align: left;
-    margin-top: 60px; }
-    #slide2 table td {
-      padding: 25px;
-      padding-left: 80px;
-      width: 450px;
-      vertical-align: top; }
-    #slide2 table i {
-      padding-right: 10px; }
+    text-align: left; }
 
 #slide3 {
   background-color: yellow; }
@@ -164,15 +173,7 @@ header {
     font-family: Roboto;
     font-size: 24px;
     font-weight: normal;
-    text-align: left;
-    margin-top: 60px; }
-    #slide3 table td {
-      padding: 25px;
-      padding-left: 80px;
-      width: 450px;
-      vertical-align: top; }
-    #slide3 table i {
-      padding-right: 10px; }
+    text-align: left; }
 
 #slide4 {
   background-color: black;
@@ -181,12 +182,18 @@ header {
   font-size: 24px;
   font-weight: normal;
   text-align: left; }
-  #slide4 i {
-    -ms-flex-line-pack: justify;
-    align-content: space-between; }
   #slide4 h2 {
     color: yellow;
     font-family: Roboto;
     font-size: 32px;
     font-weight: normal;
     text-align: center; }
+  #slide4 table {
+    display: block;
+    width: 100%; }
+    #slide4 table td {
+      width: 100%; }
+
+@media screen and (max-width: 600px) {
+  .td {
+    padding-left: 40px; } }

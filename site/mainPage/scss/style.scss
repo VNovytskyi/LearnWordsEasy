@@ -1,30 +1,42 @@
 @import "variables";
 @import "mixins";
 @import "classes";
-@import "media";
+
 
 body {
     margin: 0; 
     @include userSelectNone;
-} 
+}  
 
-table { width: 100% }
+table{ width: 100% }
+
+header ~ table { 
+    width: 100%;
+    margin-top: 60px; 
+}
 
 h2 {
     margin-top: 0px;
     padding-top: 50px;
 }
 
+i{
+    padding-right: 10px;
+}
+
 #slide1, #slide2, #slide3, #slide4{
     height: $slideHeight;
     width: 100%;
     min-height: fit-content;
+    min-width: fit-content;
+    display: block;
 } 
 
 header {
     @include text(yellow, "Chewy", 1.9em, normal, center);
     background-color: black;
     padding: 0.2em;
+    
 } 
 
 #slide1{
@@ -36,7 +48,7 @@ header {
         @include text(black, Chewy, 56px, normal, center);
     }
 
-    h2 { @include text(black, Roboto, 24px, normal, center) }
+    h3 { @include text(black, Roboto, 24px, normal, center) }
 }
 
 #slide2{
@@ -44,64 +56,33 @@ header {
 
     h2 { @include text(yellow, Roboto, 32px, normal, center) }
 
-    table{
-        @include text(yellow, Roboto, 24px, normal, left);
-        margin-top: 60px;
-        
-
-        td{
-            padding: 25px;
-            padding-left: 80px; 
-            width: 450px;
-            vertical-align: top;
-        }
-
-        i{
-            padding-right: 10px;
-        }
-    }  
+    table { @include text(yellow, Roboto, 24px, normal, left) }  
 }
-
+  
 #slide3{
     background-color: yellow;
    
     h2 { @include text(black, Roboto, 32px, normal, center) }
 
-    table{
-        @include text(black, Roboto, 24px, normal, left);
-        margin-top: 60px;
-
-        td{
-            padding: 25px;
-            padding-left: 80px; 
-            width: 450px;
-            vertical-align: top;
-        }
-
-        i{
-            padding-right: 10px;
-        }
-    }  
+    table { @include text(black, Roboto, 24px, normal, left) }  
 }
 
 #slide4{
     background-color: black;
-    @include text(yellow, Roboto, 24px, normal, left);
     
-    i{
-        align-content: space-between;
-    }
+    @include text(yellow, Roboto, 24px, normal, left);
    
     h2 { @include text(yellow, Roboto, 32px, normal, center) }
-}
 
-
-@media (max-width: 600)
-{
-    #test{
-       
+    table{
+        display: block;
+        width: 100%;
+        td{
+            width: 100%;
+        }
     }
 }
 
+  
 
-
+@import "media";
