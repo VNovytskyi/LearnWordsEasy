@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .alignLeft {
   text-align: left; }
 
@@ -87,6 +88,24 @@
   width: 450px;
   vertical-align: top; }
 
+.img {
+  display: inline-block;
+  padding-top: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto; }
+
+.imageBlock {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto; }
+
 body {
   margin: 0;
   -webkit-user-select: none;
@@ -108,7 +127,7 @@ h2 {
 i {
   padding-right: 10px; }
 
-#slide1, #slide2, #slide3, #slide4 {
+#slide1, #slide2, #slide3, #slide4, #slide5 {
   height: 110vh;
   width: 100%;
   min-height: -webkit-fit-content;
@@ -188,12 +207,48 @@ header {
     font-size: 32px;
     font-weight: normal;
     text-align: center; }
-  #slide4 table {
-    display: block;
-    width: 100%; }
-    #slide4 table td {
-      width: 100%; }
+  #slide4 img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    display: block; }
 
+#slide5 {
+  background-color: yellow; }
+  #slide5 h2 {
+    color: black;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center; }
+
+#slide6 {
+  background-color: black;
+  height: 40vh;
+  width: 100%;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  display: block; }
+
+/* Маденький экран: одна картинка по горизонтали */
 @media screen and (max-width: 600px) {
   .td {
-    padding-left: 40px; } }
+    padding-left: 40px; }
+  .img {
+    width: 99%; } }
+
+/* Средний экран: две картинки по горизонтали */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .img {
+    width: 49%; } }
+
+/*Большой экран: три картинки по горизонталии*/
+@media screen and (min-width: 900px) {
+  .img {
+    width: 32%; } }

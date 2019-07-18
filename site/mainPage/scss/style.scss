@@ -24,7 +24,7 @@ i{
     padding-right: 10px;
 }
 
-#slide1, #slide2, #slide3, #slide4{
+#slide1, #slide2, #slide3, #slide4, #slide5{
     height: $slideHeight;
     width: 100%;
     min-height: fit-content;
@@ -74,14 +74,30 @@ header {
    
     h2 { @include text(yellow, Roboto, 32px, normal, center) }
 
-    table{
+    img {
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
         display: block;
-        width: 100%;
-        td{
-            width: 100%;
-        }
-    }
+    } 
 }
+
+#slide5{
+    background-color: yellow;
+    h2 { @include text(black, Roboto, 32px, normal, center) }
+}
+
+#slide6{
+    background-color: black;
+
+    height: 40vh;
+    width: 100%;
+    min-height: fit-content;
+    min-width: fit-content;
+    display: block;
+}
+
+
 
   
 
