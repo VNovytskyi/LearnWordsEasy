@@ -5,6 +5,15 @@
 .alignRight {
   text-align: right; }
 
+.alignCentre {
+  text-align: center; }
+
+.floatLeft {
+  float: left; }
+
+.floatRight {
+  float: right; }
+
 .centre {
   margin-left: auto;
   margin-right: auto;
@@ -106,6 +115,59 @@
   margin-right: auto;
   margin-left: auto; }
 
+.topPadding {
+  margin-top: 15px; }
+
+.block {
+  padding: 40px; }
+
+/* 
+    Footer
+*/
+.logofooter {
+  font-size: 32px;
+  padding-bottom: 10px; }
+
+.blocks_3 {
+  width: 33.3%;
+  float: left; }
+
+.marginLeft {
+  margin-left: 50px; }
+
+.contentAlignRight {
+  margin-right: 50px;
+  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+
+.contentAlignRight > i {
+  display: block;
+  margin-left: auto;
+  margin-right: 0px;
+  margin-top: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+
+.footerBigLabel {
+  font-size: 32px; }
+
+.test {
+  color: yellow;
+  font-family: Chewy;
+  font-size: 20px;
+  font-weight: center;
+  text-align: left;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px; }
+
 body {
   margin: 0;
   -webkit-user-select: none;
@@ -115,10 +177,6 @@ body {
 
 table {
   width: 100%; }
-
-header ~ table {
-  width: 100%;
-  margin-top: 60px; }
 
 h2 {
   margin-top: 0px;
@@ -145,7 +203,8 @@ header {
   font-weight: normal;
   text-align: center;
   background-color: black;
-  padding: 0.2em; }
+  padding: 0.2em;
+  height: 40px; }
 
 #slide1 {
   background-color: yellow; }
@@ -226,7 +285,7 @@ header {
 
 #slide6 {
   background-color: black;
-  height: 40vh;
+  height: 45vh;
   width: 100%;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
@@ -235,6 +294,16 @@ header {
   min-width: -moz-fit-content;
   min-width: fit-content;
   display: block; }
+  #slide6 div {
+    color: yellow;
+    font-family: Chewy;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 20px; }
+  #slide6 #aboutUsText {
+    font-size: 18px; }
 
 /* Маденький экран: одна картинка по горизонтали */
 @media screen and (max-width: 600px) {

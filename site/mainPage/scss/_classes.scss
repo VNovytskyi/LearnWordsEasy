@@ -1,6 +1,10 @@
 .alignLeft { text-align: left }
 .alignRight { text-align: right }
+.alignCentre { text-align: center }
 
+.floatLeft { float: left;}
+.floatRight { float: right;}
+ 
 .centre {
     margin-left: auto;
     margin-right: auto;
@@ -113,4 +117,60 @@
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
+}
+
+.topPadding{
+    margin-top: 15px;
+}
+
+.block {
+    padding: 40px;
+}
+
+
+/* 
+    Footer
+*/
+
+.logofooter{
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.blocks_3 {
+    width: 33.3%;
+    float: left;
+}
+
+.marginLeft{
+    margin-left: 50px;
+}
+
+// Выровнять раздел Social по правой стороне с отступом
+.contentAlignRight{
+    margin-right: 50px;
+    margin-left: auto;
+    width: fit-content;
+}
+
+// Выровнять иконки из раздела Social по правой стороне
+.contentAlignRight > i{
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: 15px;
+    width: fit-content;
+}
+
+.footerBigLabel{
+    font-size: 32px;
+}
+
+.test{
+    @include text(yellow, Chewy, 20px, center, left);
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }

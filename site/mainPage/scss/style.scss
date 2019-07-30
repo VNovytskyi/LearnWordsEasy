@@ -10,11 +10,6 @@ body {
 
 table{ width: 100% }
 
-header ~ table { 
-    width: 100%;
-    margin-top: 60px; 
-}
-
 h2 {
     margin-top: 0px;
     padding-top: 50px;
@@ -36,8 +31,8 @@ header {
     @include text(yellow, "Chewy", 1.9em, normal, center);
     background-color: black;
     padding: 0.2em;
-    
-} 
+    height: 40px;
+}
 
 #slide1{
     background-color: yellow;
@@ -89,14 +84,22 @@ header {
 
 #slide6{
     background-color: black;
-
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     min-height: fit-content;
     min-width: fit-content;
     display: block;
-}
 
+    div{
+        @include text(yellow, Chewy, 20px, normal, left);
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+
+    #aboutUsText{
+        font-size: 18px;
+    }
+}
 
 
   
