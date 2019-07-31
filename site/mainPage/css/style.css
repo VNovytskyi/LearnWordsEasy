@@ -154,12 +154,13 @@
 .footerBigLabel {
   font-size: 32px; }
 
-.test {
+.copyrightBlock {
   color: yellow;
   font-family: Chewy;
   font-size: 20px;
   font-weight: center;
   text-align: left;
+  clear: both;
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -167,6 +168,16 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px; }
+
+.elem1, .elem2 {
+  float: left;
+  width: 45%;
+  margin-top: 30px;
+  margin-left: 5%;
+  height: 70px; }
+
+.conteiner {
+  margin-left: 9%; }
 
 body {
   margin: 0;
@@ -185,6 +196,11 @@ h2 {
 i {
   padding-right: 10px; }
 
+i ~ #slide6 {
+  padding-right: 10px;
+  float: left;
+  height: 50px; }
+
 #slide1, #slide2, #slide3, #slide4, #slide5 {
   height: 110vh;
   width: 100%;
@@ -194,7 +210,13 @@ i {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  display: block; }
+  display: block;
+  overflow: hidden; }
+
+#slide2, #slide3, #slide4, #slide5 {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 header {
   color: yellow;
@@ -204,7 +226,7 @@ header {
   text-align: center;
   background-color: black;
   padding: 0.2em;
-  height: 40px; }
+  overflow: hidden; }
 
 #slide1 {
   background-color: yellow; }
@@ -231,7 +253,7 @@ header {
     font-size: 32px;
     font-weight: normal;
     text-align: center; }
-  #slide2 table {
+  #slide2 div {
     color: yellow;
     font-family: Roboto;
     font-size: 24px;
@@ -246,7 +268,7 @@ header {
     font-size: 32px;
     font-weight: normal;
     text-align: center; }
-  #slide3 table {
+  #slide3 div {
     color: black;
     font-family: Roboto;
     font-size: 24px;
@@ -285,7 +307,6 @@ header {
 
 #slide6 {
   background-color: black;
-  height: 45vh;
   width: 100%;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
@@ -293,7 +314,8 @@ header {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  display: block; }
+  display: block;
+  overflow: hidden; }
   #slide6 div {
     color: yellow;
     font-family: Chewy;
@@ -329,7 +351,12 @@ header {
     margin-right: auto;
     width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content; } }
+    width: fit-content; }
+  #aboutUsText {
+    margin-left: 5%; }
+  .elem1, .elem2 {
+    width: 90%;
+    margin-left: 7%; } }
 
 /* Средний экран: две картинки по горизонтали */
 @media screen and (min-width: 650px) and (max-width: 900px) {
@@ -344,3 +371,7 @@ header {
 @media screen and (min-width: 900px) {
   .img {
     width: 32%; } }
+
+@media screen and (min-width: 1100px) {
+  .conteiner {
+    margin-left: 12%; } }

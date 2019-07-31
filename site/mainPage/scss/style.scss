@@ -19,19 +19,33 @@ i{
     padding-right: 10px;
 }
 
+i ~ #slide6{
+    padding-right: 10px;
+    float: left;
+    height: 50px;
+}
+
 #slide1, #slide2, #slide3, #slide4, #slide5{
     height: $slideHeight;
     width: 100%;
     min-height: fit-content;
     min-width: fit-content;
     display: block;
+    overflow: hidden;
+    
+} 
+
+#slide2, #slide3, #slide4, #slide5{
+    padding: 10px;
+    box-sizing: border-box;
+    
 } 
 
 header {
     @include text(yellow, "Chewy", 1.9em, normal, center);
     background-color: black;
     padding: 0.2em;
-    height: 40px;
+    overflow: hidden;
 }
 
 #slide1{
@@ -51,7 +65,7 @@ header {
 
     h2 { @include text(yellow, Roboto, 32px, normal, center) }
 
-    table { @include text(yellow, Roboto, 24px, normal, left) }  
+    div { @include text(yellow, Roboto, 24px, normal, left) }  
 }
   
 #slide3{
@@ -59,7 +73,7 @@ header {
    
     h2 { @include text(black, Roboto, 32px, normal, center) }
 
-    table { @include text(black, Roboto, 24px, normal, left) }  
+    div { @include text(black, Roboto, 24px, normal, left) }  
 }
 
 #slide4{
@@ -84,11 +98,11 @@ header {
 
 #slide6{
     background-color: black;
-    height: 45vh;
     width: 100%;
     min-height: fit-content;
     min-width: fit-content;
     display: block;
+    overflow: hidden;
 
     div{
         @include text(yellow, Chewy, 20px, normal, left);

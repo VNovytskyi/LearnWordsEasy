@@ -166,11 +166,25 @@
     font-size: 32px;
 }
 
-.test{
+.copyrightBlock{
     @include text(yellow, Chewy, 20px, center, left);
+    clear: both;
     display: block;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+}
+
+.elem1, .elem2{
+    float: left;
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 5%;
+    height: 70px;
+   
+}
+
+.conteiner{
+    margin-left: 9%;
 }

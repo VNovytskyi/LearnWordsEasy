@@ -30,6 +30,17 @@
         margin-right: auto;
         width: fit-content;
     }
+
+    #aboutUsText{
+       margin-left: 5%;
+    }
+
+    .elem1, .elem2{
+        width: 90%;
+        margin-left: 7%;
+    }
+
+
 }
 
 /* Средний экран: две картинки по горизонтали */
@@ -53,4 +64,10 @@
     .img{
         width: 32%;
     }
+} 
+
+@media screen and (min-width: 1100px){
+    .conteiner{
+        margin-left: 12%;
+    }    
 } 
