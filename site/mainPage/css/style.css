@@ -306,16 +306,39 @@ header {
     font-size: 18px; }
 
 /* Маденький экран: одна картинка по горизонтали */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .td {
     padding-left: 40px; }
   .img {
-    width: 99%; } }
+    width: 99%; }
+  .blocks_3 {
+    display: inline-block;
+    width: 100%; }
+  .marginLeft, .marginFlex, .contentAlignRight {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .footerBigLabel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; } }
 
 /* Средний экран: две картинки по горизонтали */
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (min-width: 650px) and (max-width: 900px) {
   .img {
-    width: 49%; } }
+    width: 49%; }
+  .marginFlex {
+    margin-left: 40px; }
+  .marginLeft {
+    margin-left: 20px; } }
 
 /*Большой экран: три картинки по горизонталии*/
 @media screen and (min-width: 900px) {
