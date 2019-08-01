@@ -1,34 +1,20 @@
 
-/* Маденький экран: одна картинка по горизонтали */
+/* Маденький экран */
 @media screen and (max-width: 650px)
 {
-    .td{
-        padding-left: 40px; 
-    }
-
-    .img {
-        width: 99%;
-    }
-
+    //Размер блока в footer на всю ширину
     .blocks_3 {
-        display: inline-block;
+        display: block;
         width: 100%;
     }
 
-    .marginLeft, .marginFlex, .contentAlignRight {
+    //Выравниваем контент блоков в footer
+    .marginLeft, .marginFlex, .contentAlignRight, .footerBigLabel {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: fit-content;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .footerBigLabel{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: fit-content;
+        
     }
 
     #aboutUsText{
@@ -39,16 +25,10 @@
         width: 90%;
         margin-left: 7%;
     }
-
-
 }
 
-/* Средний экран: две картинки по горизонтали */
+/* Средний экран */
 @media screen and (min-width: 650px) and (max-width: 900px){
-    .img{
-        width: 49%;
-    }
-
     .marginFlex
     {
         margin-left: 40px;
@@ -59,13 +39,7 @@
     }
 }    
 
-/*Большой экран: три картинки по горизонталии*/
-@media screen and (min-width: 900px){
-    .img{
-        width: 32%;
-    }
-} 
-
+/*Большой экран */
 @media screen and (min-width: 1100px){
     .conteiner{
         margin-left: 12%;
