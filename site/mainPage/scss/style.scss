@@ -4,13 +4,14 @@
 
 body {
     margin: 0; 
+    box-sizing: border-box;
     @include userSelectNone;
 }  
 
 i{
     padding-right: 10px;
     float: left;
-    height: 40px;
+    height: 60px;
 }
 
 #slide1, #slide2, #slide3, #slide4, #slide5{
@@ -18,7 +19,7 @@ i{
     width: 100%;
     height: $slideHeight;
     min-height: fit-content;
-    min-width: fit-content;
+    min-width: 100%;
     display: block;
     overflow: hidden;
     box-sizing: border-box;
@@ -42,10 +43,13 @@ header {
     h1 {
         margin-top: 30vh;
         margin-bottom: 0;
-        @include text(black, Chewy, 56px, normal, center);
+        @include text(black, Chewy, 54px, normal, center);
     }
 
-    h3 { @include text(black, Roboto, 24px, normal, center) }
+    h3 {
+         @include text(black, Roboto, 24px, normal, center);
+        padding: 5px; 
+    }
 }
 
 #slide2{
@@ -111,6 +115,10 @@ header {
     }
 
     #copyrightBlock { align-self: center }
+
+    i{
+        height: 40px;
+    }
 }
 
 

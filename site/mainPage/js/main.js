@@ -29,23 +29,3 @@ var drowTriangles = function(){
     $(".triangle").css("border-left-width", realTriangleWidth / 2);
     $(".triangle").css("border-right-width", realTriangleWidth / 2); 
 }
-
-
-//Тест
-var pictureTable = function(){
-    var windowWidth = $(window).width();
-
-    if(windowWidth < 600)
-    {
-        $("#pictureDiv").html("");
-
-        $("#pictureDiv").append("<table>");
-        $("#pictureDiv").append("<tr><td><img src='images/test.jpg'></td></tr>");
-        $("#pictureDiv").append("<tr><td><img src='images/test.jpg'></td></tr>");
-        $("#pictureDiv").append("<tr><td><img src='images/test.jpg'></td></tr>");
-        $("#pictureDiv").append("<tr><td><img src='images/test.jpg'></td></tr>");
-        $("#pictureDiv").append("<tr><td><img src='images/test.jpg'></td></tr>");
-        $("#pictureDiv").append("<tr><td><img src='images/test.jpg'></td></tr>");
-        $("#pictureDiv").append("</table>");
-    }
-}

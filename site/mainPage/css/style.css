@@ -147,6 +147,8 @@
 
 body {
   margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -155,7 +157,7 @@ body {
 i {
   padding-right: 10px;
   float: left;
-  height: 40px; }
+  height: 60px; }
 
 #slide1, #slide2, #slide3, #slide4, #slide5 {
   height: 110vh;
@@ -164,9 +166,7 @@ i {
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+  min-width: 100%;
   display: block;
   overflow: hidden;
   -webkit-box-sizing: border-box;
@@ -192,7 +192,7 @@ header {
     margin-bottom: 0;
     color: black;
     font-family: Chewy;
-    font-size: 56px;
+    font-size: 54px;
     font-weight: normal;
     text-align: center; }
   #slide1 h3 {
@@ -200,7 +200,8 @@ header {
     font-family: Roboto;
     font-size: 24px;
     font-weight: normal;
-    text-align: center; }
+    text-align: center;
+    padding: 5px; }
 
 #slide2 {
   background-color: black; }
@@ -297,6 +298,8 @@ header {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center; }
+  #slide6 i {
+    height: 40px; }
 
 /* Маденький экран */
 @media screen and (max-width: 650px) {
