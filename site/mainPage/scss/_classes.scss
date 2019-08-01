@@ -166,14 +166,10 @@
     font-size: 32px;
 }
 
+// Блок копирайта
 .copyrightBlock{
     @include text(yellow, Chewy, 20px, center, left);
-    clear: both;
-    display: block;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+    align-self: center;
 }
 
 .elem1, .elem2{
@@ -182,7 +178,7 @@
     margin-top: 30px;
     margin-left: 5%;
     height: 70px;
-   
+    
 }
 
 .conteiner{
