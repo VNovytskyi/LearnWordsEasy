@@ -16,18 +16,33 @@
                 <span>LWE</span>
             </div>
             <div class="floatRight">
-                <button class="btn blackBtn">Вход</button>
-                <button class="btn blackBtn">Регистрация</button>
+                <button id="SignInButton" class="btn blackBtn">Вход</button>
+                <button id="RegisterButton" class="btn blackBtn">Регистрация</button>
             </div>
         </header>
         
-        <h1>LearnWordsEasy</h1>
+        <h1>
+            <span>L</span>
+            <span>e</span>
+            <span>a</span>
+            <span>r</span>
+            <span>n</span>
+            <span>W</span>
+            <span>o</span>
+            <span>r</span>
+            <span>d</span>
+            <span>s</span>
+            <span>E</span>
+            <span>a</span>
+            <span>s</span>
+            <span>y</span>
+        </h1>
         <h3>Изучайте слова быстро и легко с нами!</h3>
-        <button class="btn centre orangeBtn">Начать</button>
+        <button id="startButton" class="btn centre orangeBtn">Начать</button>
     </div>
     <div class="trianglesDiv YellowTriangles"></div>
     <div id="slide2">
-        <h2>Возможности</h2>
+        <h2 id="test">Возможности</h2>
         <div class="conteiner">
             <div class="elem1"><i class="fa fa-home"></i>Собственный словарь</div>
             <div class="elem2"><i class="fa fa-th"></i>Слова по категориям</div>
@@ -67,7 +82,8 @@
     <div id="slide5">
         <h2>Отзывы</h2>
         <div id="feedbackBlock">
-            <i class="fa fa-cog rotation"></i>
+            
+
         </div>
     </div>
     <div class="trianglesDiv YellowTriangles"></div>
@@ -108,13 +124,8 @@
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <script>
-        //Плавное появление главной надписи
-        $("h1").fadeIn(1500);
-
-        //Плавный выезд главного меню    
-        $("header").slideDown(500);
-    </script>
+    <!--Анимация-->
+    <script src="js/fade.js"></script>
     
     <!--Зубья на стыке всех слайдов-->
     <script src="js/triangles.js"></script>

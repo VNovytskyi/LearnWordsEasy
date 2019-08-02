@@ -45,12 +45,30 @@ header {
         margin-top: 30vh;
         margin-bottom: 0;
         @include text(black, Chewy, 54px, normal, center);
-        display: none;
+        display: flex;
+        justify-content: center;
+
+        span{
+            display: none;
+        }
     }
 
     h3 {
          @include text(black, Roboto, 24px, normal, center);
         padding: 5px; 
+        display: none;
+    }
+
+    #SignInButton{
+
+    }
+
+    #RegisterButton{
+
+    }
+
+    #startButton{
+        opacity: 0;
     }
 }
 
@@ -135,6 +153,13 @@ header {
     i:last-child{
         height: 10px;
     }
+
+    #iconDiv{
+        i{
+            padding: 0;
+        }
+    }
 }
+
 
 @import "media";
