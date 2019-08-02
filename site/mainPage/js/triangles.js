@@ -1,12 +1,10 @@
 //Обработчики
 $(document).ready(function() {
     drowTriangles();
-    //pictureTable();
 });
 
 $(window).resize(function(){
     drowTriangles();
-    //pictureTable();
 });
 
 
@@ -29,3 +27,4 @@ var drowTriangles = function(){
     $(".triangle").css("border-left-width", realTriangleWidth / 2);
     $(".triangle").css("border-right-width", realTriangleWidth / 2); 
 }
+

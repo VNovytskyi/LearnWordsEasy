@@ -31,19 +31,21 @@ i{
 } 
 
 header {
-    @include text(yellow, "Chewy", 1.9em, normal, center);
+    @include text($yellow, "Chewy", 1.9em, normal, center);
     background-color: black;
-    padding: 0.2em;
+    padding: 10px;
     overflow: hidden;
+    display: none;
 }
 
 #slide1{
-    background-color: yellow;
+    background-color: $yellow;
 
     h1 {
         margin-top: 30vh;
         margin-bottom: 0;
         @include text(black, Chewy, 54px, normal, center);
+        display: none;
     }
 
     h3 {
@@ -55,13 +57,13 @@ header {
 #slide2{
     background-color: black;
 
-    h2 { @include text(yellow, Roboto, 32px, normal, center) }
+    h2 { @include text($yellow, Roboto, 32px, normal, center) }
 
-    div { @include text(yellow, Roboto, 24px, normal, left) }  
+    div { @include text($yellow, Roboto, 24px, normal, left) }  
 }
   
 #slide3{
-    background-color: yellow;
+    background-color: $yellow;
    
     h2 { @include text(black, Roboto, 32px, normal, center) }
 
@@ -71,9 +73,9 @@ header {
 #slide4{
     background-color: black;
     
-    @include text(yellow, Roboto, 24px, normal, left);
+    @include text($yellow, Roboto, 24px, normal, left);
    
-    h2 { @include text(yellow, Roboto, 32px, normal, center) }
+    h2 { @include text($yellow, Roboto, 32px, normal, center) }
 
     img {
         display: block;
@@ -84,8 +86,17 @@ header {
 }
 
 #slide5{
-    background-color: yellow;
+    background-color: $yellow;
     h2 { @include text(black, Roboto, 32px, normal, center) }
+
+    #feedbackBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 #slide6{
@@ -93,7 +104,7 @@ header {
     display: flex;
     flex-direction: column;
     
-    @include text(yellow, Chewy, 20px, normal, left);
+    @include text($yellow, Chewy, 20px, normal, left);
     
     div{
         margin-bottom: 25px;
@@ -117,11 +128,13 @@ header {
     #copyrightBlock { align-self: center }
 
     i{
-        height: 40px;
+        height: 50px;
+    }
+
+    //Чтобы copyright был не так далеко
+    i:last-child{
+        height: 10px;
     }
 }
-
-
-  
 
 @import "media";

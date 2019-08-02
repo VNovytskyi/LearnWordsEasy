@@ -182,8 +182,9 @@ header {
   font-weight: normal;
   text-align: center;
   background-color: black;
-  padding: 0.2em;
-  overflow: hidden; }
+  padding: 10px;
+  overflow: hidden;
+  display: none; }
 
 #slide1 {
   background-color: yellow; }
@@ -194,7 +195,8 @@ header {
     font-family: Chewy;
     font-size: 54px;
     font-weight: normal;
-    text-align: center; }
+    text-align: center;
+    display: none; }
   #slide1 h3 {
     color: black;
     font-family: Roboto;
@@ -260,6 +262,22 @@ header {
     font-size: 32px;
     font-weight: normal;
     text-align: center; }
+  #slide5 #feedbackBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
 
 #slide6 {
   background-color: black;
@@ -299,7 +317,9 @@ header {
     -ms-grid-row-align: center;
     align-self: center; }
   #slide6 i {
-    height: 40px; }
+    height: 50px; }
+  #slide6 i:last-child {
+    height: 10px; }
 
 /* Маденький экран */
 @media screen and (max-width: 650px) {

@@ -71,7 +71,7 @@
 
 .YellowTriangles{ 
     height: $triangleHeight;
-    background-color: yellow;
+    background-color: $yellow;
     
     div{
         border-bottom-color: black;
@@ -83,7 +83,7 @@
     background-color: black;
     
     div{
-        border-bottom-color: yellow;
+        border-bottom-color: $yellow;
     }
     
 }

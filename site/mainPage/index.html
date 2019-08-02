@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Chewy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
     <title>LearnWordsEasy</title>
 </head>
 <body>
@@ -68,12 +66,13 @@
     <div class="trianglesDiv BlackTriangles"></div>
     <div id="slide5">
         <h2>Отзывы</h2>
-
+        <div id="feedbackBlock">
+            <i class="fa fa-cog rotation"></i>
+        </div>
     </div>
     <div class="trianglesDiv YellowTriangles"></div>
     <footer id="slide6">
         <div class="footerBlock2">
-            <!--Contacts-->
             <div class="blocks_3">
                 <div class="marginLeft">
                     <div><span class="footerBigLabel">LearnWordsEasy</span></div>
@@ -82,27 +81,45 @@
                     <div><i class="fa fa-user"></i><span class="secondText">Vladyslav Novytskyi</span></div>
                 </div>
             </div>
-            <!--About us-->
             <div class="blocks_3">
                 <div class="marginFlex">
                     <div><span class="footerBigLabel">About us</span></div>
-                    <div id="aboutUsText">Мы - динамично развивающийся молодой коллектив, который прилагает все усилия для упрощения процесса обучения и еще какую-то хуйню написать.</div>
+                    <div id="aboutUsText">  Мы - динамично развивающийся молодой коллектив, 
+                                            который прилагает все усилия для упрощения процесса 
+                                            обучения и еще какую-то хуйню написать.
+                    </div>
                 </div>
             </div>
-            <!--Social-->
             <div class="blocks_3">
                 <div class="contentAlignRight">
                     <div class="flexCentre"><span class="footerBigLabel">Social</span></div> 
                     <div id="iconDiv">
-                        <i class="fa fa-telegram fa-lg"></i>
-                        <i class="fa fa-facebook fa-lg"></i>
-                        <i class="fa fa-twitter fa-lg"></i> 
-                        <i class="fa fa-pinterest fa-lg"></i> 
+                        <i class="fa fa-telegram fa-lg sizeable"></i>
+                        <i class="fa fa-facebook fa-lg sizeable"></i>
+                        <i class="fa fa-twitter fa-lg sizeable"></i> 
+                        <i class="fa fa-pinterest fa-lg sizeable"></i> 
                     </div>
                 </div>
             </div>
         </div>
         <div id="copyrightBlock">Copyright &copy 2019. All rights reserved</div>
     </footer>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        //Плавное появление главной надписи
+        $("h1").fadeIn(1500);
+
+        //Плавный выезд главного меню    
+        $("header").slideDown(500);
+    </script>
+    
+    <!--Зубья на стыке всех слайдов-->
+    <script src="js/triangles.js"></script>
+    
+    <!--Фокус при наведении на иконки в footer-->
+    <script src="js/sizeable.js"></script>
 </body>
 </html>
