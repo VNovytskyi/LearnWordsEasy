@@ -2,15 +2,15 @@
 var counter = 0;
 function fadeInArray(array, timeShow, allTime){
     setTimeout(function(){
-    $(array[counter]).fadeIn(timeShow)
-    counter++;
-        
-    if(counter < array.length){
-        fadeInArray(array, timeShow, allTime);
-    }
-    else {
-        counter = 0;
-    }
+        $(array[counter]).fadeIn(timeShow)
+        counter++;
+            
+        if(counter < array.length){
+            fadeInArray(array, timeShow, allTime);
+        }
+        else {
+            counter = 0;
+        }
     }, allTime);
 }
 
