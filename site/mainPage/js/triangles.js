@@ -27,3 +27,4 @@ var drowTriangles = function(){
     $(".triangle").css("border-left-width", realTriangleWidth / 2);
     $(".triangle").css("border-right-width", realTriangleWidth / 2); 
 }
+
