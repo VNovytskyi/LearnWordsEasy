@@ -1,12 +1,21 @@
 // Метод плавного появления элементов
 var counter = 0;
-function fadeInArray(array, timeShow, allTime){
+function fadeArray(array, mode, timeShow, allTime){
     setTimeout(function(){
-        $(array[counter]).fadeIn(timeShow)
+        if(mode == "in"){
+            $(array[counter]).fadeIn(timeShow);
+        }
+        else if(mode == "out"){
+            $(array[counter]).fadeOut(timeShow);
+        }
+        else{
+            console.log("wrong mode in func fadeArray()");
+        }
+        
         counter++;
             
         if(counter < array.length){
-            fadeInArray(array, timeShow, allTime);
+            fadeArray(array, mode, timeShow, allTime);
         }
         else {
             counter = 0;
@@ -30,13 +39,17 @@ $("header").slideDown(500, function(){
     $("#RegisterButton").fadeIn(1000);
     
     //Выводим главную надпись
-    fadeInArray($("h1").find("span"), 80, 100);
+    fadeArray($("h1").find("span"), "in", 80, 100);
     
     //Выводим надпись под главной надписью
     $("h3").fadeIn(2000);     
 });
 
-
 $(window).scroll(function () {
     console.log($(window).scrollTop());
-})
+});
+
+/*
+fadeArray($("#slide2").find("div"), "out", 1,1);
+fadeArray($("#slide2").find("div"), "in", 100,100);
+*/
