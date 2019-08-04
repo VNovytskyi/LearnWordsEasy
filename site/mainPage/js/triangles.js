@@ -7,6 +7,8 @@ $(window).resize(function(){
     drowTriangles();
 });
 
+$(document).on("")
+
 
 //Реализация функций
 var drowTriangles = function(){
