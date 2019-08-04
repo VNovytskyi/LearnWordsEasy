@@ -1,26 +1,14 @@
 // Метод плавного появления элементов
-var counter = 0;
-function fadeArray(array, mode, timeShow, allTime){
-    setTimeout(function(){
+function fadeArray(array, mode, timeShowElement, timeBetweenElements){
+    var length = array.length;
+    for(var i = 0; i < length; ++i){
         if(mode == "in"){
-            $(array[counter]).fadeIn(timeShow);
+            $(array[i]).delay(i*timeBetweenElements).fadeIn(timeShowElement);
         }
-        else if(mode == "out"){
-            $(array[counter]).fadeOut(timeShow);
+        if(mode == "out"){
+            $(array[i]).delay(i*timeBetweenElements).fadeOut(timeShowElement);
         }
-        else{
-            console.log("wrong mode in func fadeArray()");
-        }
-        
-        counter++;
-            
-        if(counter < array.length){
-            fadeArray(array, mode, timeShow, allTime);
-        }
-        else {
-            counter = 0;
-        }
-    }, allTime);
+    }
 }
 
 //Скрываем элементы
