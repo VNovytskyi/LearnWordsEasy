@@ -159,14 +159,9 @@ i {
   float: left;
   height: 60px; }
 
-#slide1, #slide2, #slide3, #slide4, #slide5 {
-  height: 110vh;
-  width: 100%;
-  height: 110vh;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
+#slide1, #slide3, #slide5, #slide2, #slide4 {
   min-width: 100%;
+  min-height: 110vh;
   display: block;
   overflow: hidden;
   -webkit-box-sizing: border-box;

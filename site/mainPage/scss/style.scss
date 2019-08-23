@@ -14,12 +14,9 @@ i{
     height: 60px;
 }
 
-#slide1, #slide2, #slide3, #slide4, #slide5{
-    height: $slideHeight;
-    width: 100%;
-    height: $slideHeight;
-    min-height: fit-content;
+#slide1, #slide3, #slide5 ,#slide2, #slide4{
     min-width: 100%;
+    min-height: $slideHeight;
     display: block;
     overflow: hidden;
     box-sizing: border-box;
